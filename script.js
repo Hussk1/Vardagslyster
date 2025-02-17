@@ -73,6 +73,8 @@ const removeStyle = () => {
 
 addEventListener('resize', removeStyle)
 
+/*=============== Voice ===============*/
+
 
 
 /*=============== FAQ ===============*/
