@@ -80,6 +80,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     height: -webkit-fill-available;
+    background: var(--color-gray);
 }
 
 .container {
@@ -162,7 +163,6 @@ body {
 body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    background-color: var(--body-color);
     color: var(--text-color);
 }
 
@@ -1125,6 +1125,10 @@ main {
 
 /* ==================== Voice ==================== */
 
+
+
+/* ==================== Team ==================== */
+
 .main-team {
     padding: 5rem 0;
 }
@@ -1803,8 +1807,7 @@ input:valid {
 .sub-container {
     padding-top: 16rem;
     background: var(--color-gray);
-    padding-bottom: 6rem;
-    height: 100vh;
+    padding-bottom: 10rem;
 }
 
 .sub-parent {
@@ -1861,19 +1864,197 @@ input:valid {
 .info-parent {
     display: flex;
     align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.info-box .left {
-    flex: 0 0 auto;
-    width: 33.333%;
+.info-box {
+    position: relative;
+    flex: 1;
+    width: calc(33.333% - 1rem);
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
-.info-box .middle {
-    flex: 0 0 auto;
-    width: 33.333%;
+.info-box::after {
+    content: "";
+    width: 2rem;
+    height: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 6.2rem;
+    right: -2rem;
 }
 
-.info-box .right {
-    flex: 0 0 auto;
-    width: 33.333%;
+.info-box:nth-last-child(1)::after {
+    display: none;
 }
+
+.info-box h1 {
+    color: #5A8CF5;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.info-box h3 {
+    color: var(--color-black);
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.info-box p {
+    font-size: 1rem;
+}
+
+/* ==================== Abonnemang ==================== */
+
+.abonnemang-main {
+    padding: 5rem 0;
+}
+
+.abonnemang-parent {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.abonnemang-box {
+    position: relative;
+    flex: 1;
+    width: calc(50% - 1rem);
+    background: white;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.abonnemang-title h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.abonnemang-under p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.abonnemang-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.abonnemang-list ul {
+    margin-bottom: 3rem;
+}
+
+.abonnemang-list ul li {
+    padding: 1rem;
+    color: var(--color-black);
+}
+
+.abonnemang-list ul li:nth-child(odd) {
+    background: var(--color-gray);
+}
+
+.abonnemang-price h1 {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: var(--color-secondary);
+}
+
+.abonnemang-price span {
+    font-size: 1.4rem;
+    margin-left: -1rem;
+}
+
+.abonnemang-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.abonnemang-btn {
+    width: 50%;
+}
+
+/* ==================== Price ==================== */
+
+.price-main {
+    padding: 5rem 0;
+}
+
+.price-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    position: relative;
+    flex: 1;
+    width: 50%;
+    background: white;
+    padding: 5rem;
+}
+
+.price-title h3 {
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.price-price h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.price-under p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.price-list ul {
+    margin-bottom: 3rem;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-list ul li {
+    padding: 1rem;
+    color: var(--color-black);
+}
+
+.price-list ul li:nth-child(odd) {
+    background: var(--color-gray);
+}
+
+.price-border {
+    border-top: 1px solid var(--color-secondary);
+    width: 11rem;
+    margin-bottom: 1rem;
+}
+
+.price-text span {
+    color: var(--color-secondary);
+}
+
+.price-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+/* ==================== Our-work ==================== */
+
+
+
