@@ -1932,25 +1932,25 @@ input:valid {
 }
 
 .abonnemang-title h1 {
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--color-black);
 }
 
 .abonnemang-under p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     color: var(--color-black);
 }
 
 .abonnemang-list h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     color: var(--color-black);
 }
 
 .abonnemang-list ul {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .abonnemang-list ul li {
@@ -1958,12 +1958,16 @@ input:valid {
     color: var(--color-black);
 }
 
+.abonnemang-list ul p{
+    font-size: 1rem;
+}
+
 .abonnemang-list ul li:nth-child(odd) {
     background: var(--color-gray);
 }
 
 .abonnemang-price h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
     color: var(--color-secondary);
 }
@@ -1974,7 +1978,7 @@ input:valid {
 }
 
 .abonnemang-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     color: var(--color-black);
 }
@@ -1993,13 +1997,14 @@ input:valid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background: white;
+    border-radius: 15px;
 }
 
 .price-box {
     position: relative;
     flex: 1;
     width: 50%;
-    background: white;
     padding: 5rem;
 }
 
@@ -2029,6 +2034,10 @@ input:valid {
     justify-content: space-between;
 }
 
+.price-list p {
+    font-size: 1rem;
+}
+
 .price-list ul li {
     padding: 1rem;
     color: var(--color-black);
@@ -2054,7 +2063,184 @@ input:valid {
     color: var(--color-black);
 }
 
-/* ==================== Our-work ==================== */
+/* ==================== Add-on ==================== */
+
+.addon-main {
+    padding: 5rem 0;
+}
+
+.addon-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.addon-box {
+    position: relative;
+    flex: 1;
+    width: 50%;
+    padding: 5rem;
+}
+
+.addon-title h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.addon-under p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.addon-list ul {
+    margin-bottom: 3rem;
+}
+
+.addon-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addon-list p {
+    font-size: 1rem;
+}
+
+.addon-list ul li {
+    padding: 1rem;
+    color: var(--color-black);
+}
+
+.addon-list ul li:nth-child(odd) {
+    background: var(--color-gray);
+}
+
+.addon-box:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50%;
+    background: var(--color-secondary);
+    right: 0;
+    top: 6rem;
+}
+
+.addon-main .faq-btn .btn {
+    padding: 1rem;
+    width: 100%;
+}
+
+/* ======================================== Page-Service ======================================== */
+
+/* ==================== Why-us ==================== */
+
+.why-main {
+    padding-top: 5rem;
+}
+
+.why-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 8rem;
+    background: white;
+}
+
+.why-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+
+.why-card img {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.why-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+/* ==================== Process ==================== */
+
+.process-content {
+    padding: 5rem 0;
+}
+
+.process-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process-box {
+    flex: 0 0 auto;
+    width: calc(25% - 20px); /* Adjusts width to account for spacing */
+    margin-right: 20px; /* Adds spacing */
+    padding: 1.2rem 2rem;
+    border-radius: 10px;
+    background: white;
+}
+
+.process-box:last-child {
+    margin-right: 0; /* Removes margin from the last item */
+}
+
+.process-box h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    color: var(--color-secondary);
+}
+
+.process-box h3 {
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    margin-bottom: 0.6rem;
+    color: var(--color-black);
+}
+
+.process-box p {
+    font-size: 1rem;
+}
+
+/* ==================== Special-sub ==================== */
+
+.special.sub .main-sub {
+    padding: 0;
+}
+
+.special.sub .title {
+    padding-bottom: 3rem;    
+}
+
+.special.sub .hero-bottom {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+/* ======================================== Page-Contact ======================================== */
+
+/* ==================== Contact ==================== */
+
+.contact-main {
+    padding: 5rem 0;
+}
 
 
 
+
+/* ==================== Special-Why ==================== */
+
+.special.why .why-main {
+    padding-bottom: 5rem;
+}
